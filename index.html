@@ -207,7 +207,8 @@
   .tile-hr-reporting .tile-icon { background: #ccfbf1; }
   .tile-tableau      .tile-icon { background: #ffedd5; }
   .tile-disc-plus    .tile-icon { background: #fef3c7; }
-  .tile-disc-viewer  .tile-icon { background: #ede9fe; }
+  .tile-disc-viewer        .tile-icon { background: #ede9fe; }
+  .tile-customer-success   .tile-icon { background: #d1fae5; }
 
   /* ── ENV GRID ── */
   .env-grid {
@@ -306,18 +307,6 @@
       </div>
     </div>
 
-    <div class="nav-section-label">CoreHR</div>
-
-    <div class="nav-group">
-      <button class="nav-group-toggle" onclick="toggleGroup(this)">CoreHR Sites <span class="chevron">▼</span></button>
-      <div class="nav-group-items">
-        <a class="nav-link" href="https://access-support.force.com/Support/s/login/" target="_blank">Access Customer Success Portal</a>
-        <a class="nav-link" href="https://corehr.ideas.aha.io/ideas/" target="_blank">AccessPeople Ideas Portal</a>
-        <a class="nav-link" href="https://go.accessacloud.com/" target="_blank">Access PeopleXD Learning</a>
-        <a class="nav-link" href="https://corehr.teamwork.com/launchpad/login/" target="_blank">AccessPeople Teamwork</a>
-      </div>
-    </div>
-
     <div class="nav-section-label">Support</div>
 
     <div class="nav-group">
@@ -341,8 +330,6 @@
         <a class="nav-link" href="https://teams.microsoft.com/" target="_blank">MS Teams</a>
         <a class="nav-link" href="https://activeroles.it.ox.ac.uk/Service/default.aspx" target="_blank">Active Roles</a>
         <a class="nav-link" href="https://jobs.web.ox.ac.uk/back-up-jobs-page" target="_blank">Jobs Standby Page</a>
-        <a class="nav-link" href="https://my.corehr.com/pls/uoxrecruit/erq_search_xml_api.build_search_xml?p_internal_external=A&p_company=10" target="_blank">UOXP External Recruitment XML</a>
-        <a class="nav-link" href="https://ssm-waf-apps.it.ox.ac.uk/jobs" target="_blank">Standby Page Web App</a>
         <a class="nav-link" href="https://finance.admin.ox.ac.uk/salary-scales" target="_blank">Salary Scales</a>
         <a class="nav-link" href="https://hrsystems.admin.ox.ac.uk/payroll-periods" target="_blank">Payroll Periods</a>
         <a class="nav-link" href="https://compliance.admin.ox.ac.uk/staff-privacy-policy" target="_blank">Staff Privacy Policy</a>
@@ -361,7 +348,6 @@
         <a class="nav-link" href="https://services.it.ox.ac.uk/Service/professional-services-and-university-administration/hr-information-systems" target="_blank">PeopleXD Service</a>
         <a class="nav-link" href="https://services.it.ox.ac.uk/Service/professional-services-and-university-administration/HR%20Reporting" target="_blank">HR Reporting Service</a>
         <a class="nav-link" href="https://services.it.ox.ac.uk/Service/connect-and-communicate/internal-jobs-list" target="_blank">Internal Jobs List</a>
-        <a class="nav-link" href="https://services.it.ox.ac.uk/Service/professional-services-and-university-administration/vacancy-feeds-for-depts-and-naturejobs" target="_blank">Vacancy Feeds</a>
         <a class="nav-link" href="https://services.it.ox.ac.uk/Service/professional-services-and-university-administration/childcare-database" target="_blank">Childcare Database</a>
         <a class="nav-link" href="https://services.it.ox.ac.uk/Service/professional-services-and-university-administration/case-management-staff-immigration" target="_blank">Staff Immigration Case Management</a>
         <a class="nav-link" href="https://services.it.ox.ac.uk/Service/professional-services-and-university-administration/Health%20and%20Safety%20Incident%20Reporting%20and%20Investigation%20System" target="_blank">Health &amp; Safety (IRIS)</a>
@@ -373,7 +359,6 @@
     <div class="nav-group">
       <button class="nav-group-toggle" onclick="toggleGroup(this)">Other Teams <span class="chevron">▼</span></button>
       <div class="nav-group-items">
-        <a class="nav-link" href="http://www.admin.ox.ac.uk/personnel/" target="_blank">Personnel Services</a>
         <a class="nav-link" href="https://hrsystems.admin.ox.ac.uk/hr-analytics" target="_blank">HR Analytics Team</a>
         <a class="nav-link" href="http://www.admin.ox.ac.uk/personnel/reward/" target="_blank">Reward | Personnel Services</a>
         <a class="nav-link" href="https://finance.admin.ox.ac.uk/payroll" target="_blank">Payroll | Finance Division</a>
@@ -386,13 +371,6 @@
       <div class="nav-group-items">
         <a class="nav-link" href="https://compliance.admin.ox.ac.uk/staff-guidance-on-data-breaches" target="_blank">Guidance on Data Breaches</a>
         <a class="nav-link" href="https://compliance.admin.ox.ac.uk/data-privacy-training-module" target="_blank">Data Privacy Training</a>
-      </div>
-    </div>
-
-    <div class="nav-group">
-      <button class="nav-group-toggle" onclick="toggleGroup(this)">HR Signpost <span class="chevron">▼</span></button>
-      <div class="nav-group-items">
-        <a class="nav-link" href="file:///O:/PS/HR%20Systems/Support/Infrastructure/HRIS%20Launcher/HRIS_signpost.html" target="_top">HR Systems Signpost</a>
       </div>
     </div>
 
@@ -427,6 +405,9 @@
       </a>
       <a class="tile tile-disc-viewer" href="https://hradm.corehr.com/discoverer/viewer" target="_blank" onclick="flashTile(this)">
         <div class="tile-icon">👁️</div><span class="tile-label">Discoverer Viewer</span>
+      </a>
+      <a class="tile tile-customer-success" href="https://accessgroup.my.site.com/Support/s/login/?language=en_US" target="_blank" onclick="flashTile(this)">
+        <div class="tile-icon">🎯</div><span class="tile-label">Customer Success Portal</span>
       </a>
     </div>
 
