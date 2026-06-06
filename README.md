@@ -1,3 +1,13 @@
+## Claude Quick Load
+
+Paste any URL below directly into Claude chat to load project context:
+
+| File | Raw URL |
+|---|---|
+| `CLAUDE.md` | https://raw.githubusercontent.com/begb0037admin/hris-launcher/main/CLAUDE.md |
+
+---
+
 # HRIS Launcher — Project Documentation
 
 **Last updated:** June 2026 · **Owner:** Kevin Lelitte (begb0037) · **Purpose:** Central launch pad for University of Oxford HRIS Support Centre — provides single-click access to all production and non-production HRIS environments, support tools, and service catalogues. Served free via GitHub Pages.
