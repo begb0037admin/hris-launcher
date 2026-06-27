@@ -35,6 +35,9 @@ Share `https://begb0037admin.github.io/hris-launcher/` with the team.
 2. Push directly to main — GitHub Pages rebuilds in ~60 seconds
 3. Update clone dates when a non-prod environment is refreshed: search for the env code (UOXZ, UOXC, UOXU) and update the `env-date` div
 
+## Effort Level Governance
+Before any task where higher effort is warranted, signal to Kevin: what the task is, why higher effort is needed, and an explicit request to raise the effort level. Wait — do not proceed until Kevin raises it. Signal when the high-effort phase is done; Kevin decides when to return to normal. Never change effort level unilaterally. See CONSTITUTION.md Section 10 (v2.0, 2026-06-27).
+
 ## Hard Rules
 - Single `index.html` — no framework, no build step
 - No credentials in any file
