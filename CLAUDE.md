@@ -42,6 +42,7 @@ Before any task where higher effort is warranted, signal to Kevin: what the task
 - Single `index.html` — no framework, no build step
 - No credentials in any file
 - Always push directly to main
+- **NEVER strip, replace, or truncate the base64 Oxford crest in the `<img class="sidebar-crest">` tag** — the crest is embedded as base64 JPEG directly in `index.html`; do not replace it with an external file reference, do not delete it, do not truncate the data. A grey square in the sidebar means the base64 data was corrupted during an edit.
 - All mockups and visual designs are produced as Claude Artifacts — never committed to the repository (see CONSTITUTION.md Section 11)
 
 ## Branch and Merge Protocol
