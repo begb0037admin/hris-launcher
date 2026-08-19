@@ -9,12 +9,13 @@
 - **Status:** Active — static, minimal maintenance required
 - **Repo:** https://github.com/begb0037admin/hris-launcher
 - **Live site:** https://begb0037admin.github.io/hris-launcher/
-- **Last updated:** 2026-06-18
+- **Last updated:** 2026-08-19 (see `RESUME.md` for the change)
 
 ## Bootstrap Order
 1. This file (orientation)
-2. `BRANDING.md` from `begb0037admin/command-centre` before any visual change
-3. `index.html` — the entire dashboard, single file
+2. `RESUME.md` — durable state record of session changes (added 19 Aug 2026; read this for anything that's changed since this file was last updated)
+3. `BRANDING.md` from `begb0037admin/command-centre` before any visual change
+4. `index.html` — the entire dashboard, single file
 
 ## Architecture
 | Component | Description |
@@ -25,7 +26,7 @@
 - **Production UOXP:** Back Office, Staff Portal, e-Recruitment, HR Reporting, Tableau Server, Discoverer Plus/Viewer, Customer Success Portal
 - **Non-Production PeopleXD:** UOXZ (Sandpit & Training), UOXC (Config), UOXU (UAT)
 - **Non-Production HR Reporting:** DEV, TEST, QA
-- **Sidebar:** HRIS Support, Support Tools, Service Catalogue, Other Teams, Data Protection
+- **Sidebar:** HRIS Support, Support Tools, Oxford IT Sign-In Directory, Other Teams, Data Protection (the old "Service Catalogue" group was removed 19 Aug 2026 — all 8 entries were dead links; see `RESUME.md`)
 
 ## Day-to-Day
 Nothing to do — open the live URL. It is always up.
