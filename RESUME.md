@@ -33,3 +33,17 @@
 - This repo still has no per-repo dedicated agent (unlike `hr-fa-knowledge-base`/Adam). Check `begb0037admin/agent-commons/AGENT_DIRECTORY.md` for current routing before assuming who owns follow-up work here.
 
 ---
+
+## Update — 19 August 2026 (same day, follow-up)
+
+Kevin looked at the live result above and asked for two changes: (1) drop the redundant "- sign in" suffix from every title, (2) stop treating the 53 entries as one flat list — reorganize by actual function, folding some into existing groups (Support Tools/Other Teams/Data Protection) where they genuinely fit, and creating new groups where nothing existing fit. Explicit instruction: "don't be so rigid to stick to the only directories we have."
+
+**What changed:** the single "Oxford IT Sign-In Directory" nav-group was replaced by 10 new nav-groups (HR & Case Management, Microsoft 365 & Communication, Network/Devices & Remote Access, Finance & Research Costing, AI Tools, Research & Scholarly Systems, Learning & Teaching, Student/Careers & Academic Records, Library & Digital Scholarship, Facilities & Procurement), decided by reading all 53 entries individually rather than a mechanical rule. Five entries judged to fit the pre-existing "Support Tools" group better than any new one were appended there instead (BeyondTrust Remote Support, Chorus Phone Management, Clarity, Mosaic Website Management, My Sign-ins). Two exact-URL duplicates against pre-existing Support Tools entries were dropped rather than kept redundantly: "Teams (Nexus365)" (same URL as "MS Teams") and "IT Self Service (OSM)" (same URL as "Oxford Service Manager (OSM)"). All 53 source entries verified programmatically accounted for before writing any HTML (51 placed across the new groups + Support Tools additions, 2 duplicates dropped).
+
+Result: 14 nav-groups total (up from 5), 75 nav-links total, 0 remaining "- sign in" title suffixes. Commit `2f1221e6`. Verified: structural checks (balanced nav-group/items counts, crest intact) → pushed → re-fetched via git blob API, byte-for-byte identical → this repo's Pages deployment (run `32297650742`) polled to `completed`/`success` → live `pxd.lelitte.co.uk` fetched directly, byte-for-byte identical, all 14 group names confirmed present.
+
+The same title-cleanup + categorization was also applied to `hr-fa-knowledge-base/data/oxford-signin-directory.json` (all 53 records retained there — no equivalent pre-existing groups to dedupe against, so the 5 "Support Tools"-style entries got their own category, "IT Support & Admin Tools," instead) for consistency across both sites showing this data. Full detail in `hr-fa-knowledge-base/HANDOVER.md` → session 7, Part 3.
+
+**Still outstanding:** the visual/screenshot approval from the original entry above is still open, now against this updated version of the sidebar.
+
+---
